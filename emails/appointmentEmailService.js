@@ -11,7 +11,7 @@ export async function sendEmailNewAppointment({date, time }) {
         // Enviar el email
         const info = await transporter.sendMail({
             from: 'AppRoxamanicure <citas@roxamanicure.com>',
-            to: 'admin@correo.com',
+            to: 'robinsonvegas@gmail.com',
             subject: "AppRoxamanicure - Nueva Cita",
             text: "AppRoxamanicure - Nueva Cita",
             html: `<p>Hola: Admin, tienes una nueva Cita</p>
@@ -33,7 +33,7 @@ export async function sendEmailUpdateAppointment({date, time }) {
         // Enviar el email
         const info = await transporter.sendMail({
             from: 'AppRoxamanicure <citas@roxamanicure.com>',
-            to: 'admin@correo.com',
+            to: 'robinsonvegas@gmail.com',
             subject: "AppRoxamanicure - Cita Actualizada",
             text: "AppRoxamanicure - Cita Actualizada",
             html: `<p>Hola: Admin, un usuario ha modificado una cita.</p>
@@ -55,7 +55,7 @@ export async function sendEmailCancelledAppointment({date, time }) {
         // Enviar el email
         const info = await transporter.sendMail({
             from: 'AppRoxamanicure <citas@roxamanicure.com>',
-            to: 'admin@correo.com',
+            to: 'robinsonvegas@gmail.com',
             subject: "AppRoxamanicure - Cita Cancelada",
             text: "AppRoxamanicure - Cita Cancelada",
             html: `<p>Hola: Admin, un usuario ha cancelado una cita.</p>
